@@ -39,6 +39,7 @@ const Cart = (props) => {
                         <span>{item.price}</span>
                         </Col>
                         <Col className="col-2">
+                        
                         <span>x{item.quantity}</span>
                         </Col>
                         <Col className="col-2">

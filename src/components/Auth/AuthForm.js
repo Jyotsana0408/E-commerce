@@ -33,7 +33,7 @@ const AuthForm = () => {
       if(enteredPassword===enteredConfirmPassword){
         try{
           setRequest(true);
-          axios.post("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyD61trb_TQ27ZLrT4ybyyFKWkht-DaUa0o",{
+          axios.post("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDzhj-OkCONP1w18lRmoYUgWOasHIisKBI",{
             email:enteredEmail,
             password:enteredPassword,
             returnSecureToken: true,
@@ -50,7 +50,7 @@ const AuthForm = () => {
       try {
         setRequest(true);
         let response = await axios.post(
-          "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyD61trb_TQ27ZLrT4ybyyFKWkht-DaUa0o",
+          "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDzhj-OkCONP1w18lRmoYUgWOasHIisKBI",
           {
             email: enteredEmail,
             password: enteredPassword,
